@@ -128,9 +128,9 @@ In this project, `zero padding` is used, meaning the added boundary pixels are s
 ### BRAM Read/Write Operations
 
 1. Read Operation (Read Request):
-To perform a read operation, the signal `R_req` must be asserted to `1'b1` to indicate a read request. The target address should be placed on the addr bus. The requested data will appear on R_data one clock cycle later.
+To perform a read operation, the signal `bram0_en` must be asserted to `1'b1` to indicate a read request. The target address should be placed on the addr bus (`bram0_addr`). The requested data will appear on R_data (`bram0_dout`) one clock cycle later.
 
 2. Write Operation (Write Request):
-To perform a write operation, `R_req` should still be set to 1'b1, while `W_req` must be set to 4'b1111, indicating that all byte lanes are enabled for writing. On the rising edge of the clock, the data on W_data will be written into the memory location specified by addr.
+To perform a write operation, `bram1_en` should still be set to `1'b1` (but in this project bram1_en always set to 1'b1), while `bram1_we` must be set to 4'b1111, indicating that all byte lanes are enabled for writing. On the rising edge of the clock, the data on W_data will be written into the memory location specified by addr.
 
 ![Bram](./pic/Bram.png)
