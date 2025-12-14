@@ -72,25 +72,25 @@ reg [7:0]  mag_clipped;              // clipped magnitude
 
  // Todo : Fill in the Sobel kernel values
 initial begin
-    kernel1[0] =  ???;
-    kernel1[1] =  ???;
-    kernel1[2] =  ???;
-    kernel1[3] =  ???;
-    kernel1[4] =  ???;
-    kernel1[5] =  ???;
-    kernel1[6] =  ???;
-    kernel1[7] =  ???;
-    kernel1[8] =  ???;
+    kernel1[0] =  8'h01;
+    kernel1[1] =  8'h00;
+    kernel1[2] =  8'hFF; // Note: how to process a signed number ?
+    kernel1[3] =  8'h02;
+    kernel1[4] =  8'h00;
+    kernel1[5] =  8'hFE;
+    kernel1[6] =  8'h01;
+    kernel1[7] =  8'h00;
+    kernel1[8] =  8'hFF;
 
-    kernel2[0] =  ???;
-    kernel2[1] =  ???;
-    kernel2[2] =  ???;
-    kernel2[3] =  ???;
-    kernel2[4] =  ???;
-    kernel2[5] =  ???;
-    kernel2[6] =  ???;
-    kernel2[7] =  ???;
-    kernel2[8] =  ???;
+    kernel2[0] =  8'h01;
+    kernel2[1] =  8'h02;
+    kernel2[2] =  8'h01;
+    kernel2[3] =  8'h00;
+    kernel2[4] =  8'h00;
+    kernel2[5] =  8'h00;
+    kernel2[6] =  8'hFF;
+    kernel2[7] =  8'hFE;
+    kernel2[8] =  8'hFF;
 end
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -104,10 +104,10 @@ always @(*) begin
             next_state = start ? READ_9_PIXELS : IDLE;
 
         READ_9_PIXELS:
-            next_state = ???;
+            next_state = READ_3_PIXELS;
 
         READ_3_PIXELS:
-            next_state = ???;
+            next_state = MULPTIPLY;
 
         MULTIPLY:
             next_state = ACCUMULATE;
@@ -116,13 +116,14 @@ always @(*) begin
             next_state = WRITE;
 
         WRITE:
-            if (??? && ???)
+            if (x == IMG_WIDTH - 1 && y == IMG_HEIGHT - 1) // done processing image ?
                 next_state = DONE;
             else
                 next_state = (next_x == 0) ? READ_9_PIXELS : READ_3_PIXELS;
 
         DONE:
             next_state = start ? DONE : IDLE;
+
         default:
             next_state = IDLE;
     endcase
@@ -256,7 +257,7 @@ end
 // mul1, mul2
 always @(posedge clk) begin
     for (i = 0; i < 9; i = i + 1) begin
-        mul1[i] <= $signed({ 1'b0, buffer[i] }) * $signed(kernel1[i]);
+        mul1[i] <= $signed({ 1'b0, buffer[i] }) * $signed(kernel1[i]); // Note: here resolved the signed problem
         mul2[i] <= $signed({ 1'b0, buffer[i] }) * $signed(kernel2[i]);
     end
 end
@@ -328,7 +329,7 @@ end
 
 // Todo : Complete the missing bram0_en and done assignments.
 // bram0_en, done
-assign bram0_en = (state == ??? || state == ???) ? 1'b1 : 1'b0;
+assign bram0_en = (state == READ_9_PIXELS || state == READ_3_PIXELS) ? 1'b1 : 1'b0; // perform read operator -> 1
 assign done = (state == DONE) ? 1'b1 : 1'b0;
 
 endmodule
