@@ -229,20 +229,20 @@ always @(posedge clk or negedge rst_n) begin
     end else if (state == READ_9_PIXELS) begin
         case (counter)
             4'd2:  buffer[0] <= (x == 0 || y == 0)                          ? 8'd0 : bram0_dout[7:0];
-            4'd3:  buffer[1] <= ???;
-            4'd4:  buffer[2] <= ???;
-            4'd5:  buffer[3] <= ???;
-            4'd6:  buffer[4] <= ???;
-            4'd7:  buffer[5] <= ???;
-            4'd8:  buffer[6] <= ???;
-            4'd9:  buffer[7] <= ???;
+            4'd3:  buffer[1] <= (y == 0)                                    ? 8'd0 : bram0_dout[7:0];
+            4'd4:  buffer[2] <= (x == IMG_WIDTH - 1 || y == 0)              ? 8'd0 : bram0_dout[7:0];
+            4'd5:  buffer[3] <= (x == 0)                                    ? 8'd0 : bram0_dout[7:0];
+            4'd6:  buffer[4] <= bram0_dout[7:0];
+            4'd7:  buffer[5] <= (x == IMG_WIDTH - 1)                        ? 8'd0 : bram0_dout[7:0];
+            4'd8:  buffer[6] <= (x == 0 || y == IMG_HEIGHT - 1)             ? 8'd0 : bram0_dout[7:0];
+            4'd9:  buffer[7] <= (y == IMG_HEIGHT - 1)                       ? 8'd0 : bram0_dout[7:0];
             4'd10: buffer[8] <= (x == IMG_WIDTH - 1 || y == IMG_HEIGHT - 1) ? 8'd0 : bram0_dout[7:0];
         endcase
     end else if (state == READ_3_PIXELS) begin
         case (counter)
-            4'd2: buffer[0] <= (x == IMG_WIDTH - 1 || y == 0)              ? 8'd0 : bram0_dout[7:0];
-            4'd3: buffer[1] <= (x == IMG_WIDTH - 1)                        ? 8'd0 : bram0_dout[7:0];
-            4'd4: buffer[2] <= (x == IMG_WIDTH - 1 || y == IMG_HEIGHT - 1) ? 8'd0 : bram0_dout[7:0];
+            4'd2: buffer[2] <= (x == IMG_WIDTH - 1 || y == 0)              ? 8'd0 : bram0_dout[7:0];
+            4'd3: buffer[5] <= (x == IMG_WIDTH - 1)                        ? 8'd0 : bram0_dout[7:0];
+            4'd4: buffer[8] <= (x == IMG_WIDTH - 1 || y == IMG_HEIGHT - 1) ? 8'd0 : bram0_dout[7:0];
         endcase
     end else if (state == WRITE) begin
         buffer[0] <= buffer[1];
