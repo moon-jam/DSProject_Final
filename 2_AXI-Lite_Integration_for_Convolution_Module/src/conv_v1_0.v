@@ -4,10 +4,10 @@
 	module conv_v1_0 #
 	(
 		// Users to add parameters here
-
+        
 		// User parameters ends
 		// Do not modify the parameters beyond this line
-
+        
 
 		// Parameters of Axi Slave Bus Interface S00_AXI
 		parameter integer C_S00_AXI_DATA_WIDTH	= 32,
@@ -15,8 +15,16 @@
 	)
 	(
 		// Users to add ports here
+		
+        //BRAM0
+        output wire [31:0] bram0_addr,
+        output wire        bram0_en,
+        input  wire [31:0] bram0_dout,
 
-
+        //BRAM1
+        output wire [31:0] bram1_addr,
+        output wire [31:0] bram1_din,
+        output wire [3:0]  bram1_we,
 
 		// User ports ends
 		// Do not modify the ports beyond this line
@@ -71,8 +79,15 @@
 		.S_AXI_RRESP(s00_axi_rresp),
 		.S_AXI_RVALID(s00_axi_rvalid),
 		.S_AXI_RREADY(s00_axi_rready),
-
-
+		
+		
+		
+		.bram0_addr(bram0_addr),
+        .bram0_en  (bram0_en),
+        .bram0_dout(bram0_dout),
+        .bram1_addr(bram1_addr),
+        .bram1_din (bram1_din),
+        .bram1_we  (bram1_we)
 		);
 
 	// Add user logic here

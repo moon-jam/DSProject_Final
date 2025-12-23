@@ -4,7 +4,7 @@
 	module conv_v1_0_S00_AXI #
 	(
 		// Users to add parameters here
-
+    
 		// User parameters ends
 		// Do not modify the parameters beyond this line
 
@@ -16,8 +16,16 @@
 	(
 		// Users to add ports here
 		
-
-		
+		// BRAM0 
+        output wire [31:0] bram0_addr,
+        output wire        bram0_en,
+        input  wire [31:0] bram0_dout,
+        
+        // BRAM1 
+        output wire [31:0] bram1_addr,
+        output wire [31:0] bram1_din,
+        output wire [3:0]  bram1_we,
+        
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -405,7 +413,38 @@
 
 
 	// Todo : Complete the missing part.
+	
+	
+
+    wire conv_done_out;
     
+    conv #(
+        .IMG_WIDTH(256),
+        .IMG_HEIGHT(256)
+    ) u_conv (
+        .clk        (S_AXI_ACLK),      
+        .rst_n      (S_AXI_ARESETN),  
+
+        .start(slv_reg0[0]),     
+        .done(conv_done_out), 
+
+        .bram0_addr (bram0_addr), 
+        .bram0_dout (bram0_dout),
+        .bram0_en   (bram0_en),
+
+        .bram1_addr (bram1_addr),
+        .bram1_din  (bram1_din),
+        .bram1_we   (bram1_we)
+    );
+    
+    always @(posedge S_AXI_ACLK) begin
+        if (!S_AXI_ARESETN)
+            slv_reg1 <= 32'd0;
+        else if (!slv_reg0[0])   //clear
+            slv_reg1[0] <= 1'b0;
+        else if (conv_done_out)
+            slv_reg1[0] <= 1'b1;
+    end
 
 	// User logic ends
 
