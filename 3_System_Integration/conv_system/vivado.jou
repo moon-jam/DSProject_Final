@@ -51,3 +51,4 @@ connect_bd_net [get_bd_pins conv_v1_0_0/bram1_din] [get_bd_pins axi_bram_ctrl_1_
 connect_bd_net [get_bd_pins conv_v1_0_0/bram1_we] [get_bd_pins axi_bram_ctrl_1_bram/web]
 validate_bd_design
 validate_bd_design -force
+save_bd_design
