@@ -1,0 +1,1313 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Dec 27 20:50:30 2025
+# Process ID: 24828
+# Current directory: C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.runs/impl_1
+# Command line: vivado.exe -log conv_system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source conv_system_wrapper.tcl -notrace
+# Log file: C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.runs/impl_1/conv_system_wrapper.vdi
+# Journal file: C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.runs/impl_1\vivado.jou
+# Running On: Panda-Windows11, OS: Windows, CPU Frequency: 3693 MHz, CPU Physical cores: 12, Host memory: 34258 MB
+#-----------------------------------------------------------
+source conv_system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/User/school/digi_sys_exp/DSProject_Final/2_AXI-Lite_Integration_for_Convolution_Module/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.cache/ip 
+Command: link_design -top conv_system_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_bram_ctrl_0_0/conv_system_axi_bram_ctrl_0_0.dcp' for cell 'conv_system_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_bram_ctrl_0_bram_0/conv_system_axi_bram_ctrl_0_bram_0.dcp' for cell 'conv_system_i/axi_bram_ctrl_0_bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_bram_ctrl_1_0/conv_system_axi_bram_ctrl_1_0.dcp' for cell 'conv_system_i/axi_bram_ctrl_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_bram_ctrl_1_bram_0/conv_system_axi_bram_ctrl_1_bram_0.dcp' for cell 'conv_system_i/axi_bram_ctrl_1_bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_cdma_0_0/conv_system_axi_cdma_0_0.dcp' for cell 'conv_system_i/axi_cdma_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/conv_system_axi_smc_0.dcp' for cell 'conv_system_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_conv_v1_0_0_0/conv_system_conv_v1_0_0_0.dcp' for cell 'conv_system_i/conv_v1_0_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_processing_system7_0_0/conv_system_processing_system7_0_0.dcp' for cell 'conv_system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_rst_ps7_0_100M_0/conv_system_rst_ps7_0_100M_0.dcp' for cell 'conv_system_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_xbar_0/conv_system_xbar_0.dcp' for cell 'conv_system_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_auto_pc_0/conv_system_auto_pc_0.dcp' for cell 'conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.506 . Memory (MB): peak = 1018.402 ; gain = 2.902
+INFO: [Netlist 29-17] Analyzing 528 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_processing_system7_0_0/conv_system_processing_system7_0_0.xdc] for cell 'conv_system_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_processing_system7_0_0/conv_system_processing_system7_0_0.xdc] for cell 'conv_system_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_cdma_0_0/conv_system_axi_cdma_0_0.xdc] for cell 'conv_system_i/axi_cdma_0/U0'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_cdma_0_0/conv_system_axi_cdma_0_0.xdc] for cell 'conv_system_i/axi_cdma_0/U0'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_rst_ps7_0_100M_0/conv_system_rst_ps7_0_100M_0_board.xdc] for cell 'conv_system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_rst_ps7_0_100M_0/conv_system_rst_ps7_0_100M_0_board.xdc] for cell 'conv_system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_rst_ps7_0_100M_0/conv_system_rst_ps7_0_100M_0.xdc] for cell 'conv_system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_rst_ps7_0_100M_0/conv_system_rst_ps7_0_100M_0.xdc] for cell 'conv_system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_1/bd_d663_psr_aclk_0_board.xdc] for cell 'conv_system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_1/bd_d663_psr_aclk_0_board.xdc] for cell 'conv_system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_1/bd_d663_psr_aclk_0.xdc] for cell 'conv_system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_1/bd_d663_psr_aclk_0.xdc] for cell 'conv_system_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:143]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:146]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:155]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc:178]
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_11/bd_d663_sarn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/s00_nodes/s00_r_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:122]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:125]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:128]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:131]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:134]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:137]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:149]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:158]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:161]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:167]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:171]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:174]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc:178]
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_12/bd_d663_srn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/s00_nodes/s00_r_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:49]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:55]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:59]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:63]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:66]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:70]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:73]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:79]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:85]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:91]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:94]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:97]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:100]
+INFO: [Common 17-14] Message 'Vivado 12-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:107]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:110]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:113]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:119]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:122]
+INFO: [Common 17-14] Message 'Vivado_Tcl 4-921' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc:122]
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_13/bd_d663_sawn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_14/bd_d663_swn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/s00_nodes/s00_w_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_14/bd_d663_swn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/s00_nodes/s00_w_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_15/bd_d663_sbn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/s00_nodes/s00_b_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_15/bd_d663_sbn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/s00_nodes/s00_b_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_17/bd_d663_m00arn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m00_nodes/m00_ar_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_17/bd_d663_m00arn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m00_nodes/m00_ar_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_18/bd_d663_m00rn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m00_nodes/m00_r_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_18/bd_d663_m00rn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m00_nodes/m00_r_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_19/bd_d663_m00awn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m00_nodes/m00_aw_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_19/bd_d663_m00awn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m00_nodes/m00_aw_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_20/bd_d663_m00wn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m00_nodes/m00_w_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_20/bd_d663_m00wn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m00_nodes/m00_w_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_21/bd_d663_m00bn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m00_nodes/m00_b_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_21/bd_d663_m00bn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m00_nodes/m00_b_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_24/bd_d663_m01arn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m01_nodes/m01_ar_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_24/bd_d663_m01arn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m01_nodes/m01_ar_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_25/bd_d663_m01rn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m01_nodes/m01_r_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_25/bd_d663_m01rn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m01_nodes/m01_r_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_26/bd_d663_m01awn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m01_nodes/m01_aw_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_26/bd_d663_m01awn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m01_nodes/m01_aw_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_27/bd_d663_m01wn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m01_nodes/m01_w_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_27/bd_d663_m01wn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m01_nodes/m01_w_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_28/bd_d663_m01bn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m01_nodes/m01_b_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_28/bd_d663_m01bn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m01_nodes/m01_b_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_31/bd_d663_m02arn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m02_nodes/m02_ar_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_31/bd_d663_m02arn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m02_nodes/m02_ar_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_32/bd_d663_m02rn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m02_nodes/m02_r_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_32/bd_d663_m02rn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m02_nodes/m02_r_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_33/bd_d663_m02awn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m02_nodes/m02_aw_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_33/bd_d663_m02awn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m02_nodes/m02_aw_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_34/bd_d663_m02wn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m02_nodes/m02_w_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_34/bd_d663_m02wn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m02_nodes/m02_w_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_35/bd_d663_m02bn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m02_nodes/m02_b_node/inst'
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/bd_0/ip/ip_35/bd_d663_m02bn_0_clocks.xdc] for cell 'conv_system_i/axi_smc/inst/m02_nodes/m02_b_node/inst'
+Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/smartconnect.xdc] for cell 'conv_system_i/axi_smc/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/smartconnect.xdc:1]
+Finished Parsing XDC File [c:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.gen/sources_1/bd/conv_system/ip/conv_system_axi_smc_0/smartconnect.xdc] for cell 'conv_system_i/axi_smc/inst'
+INFO: [Project 1-1714] 69 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 866 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1807.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 222 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 218 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+25 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1807.531 ; gain = 1280.023
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.790 . Memory (MB): peak = 1807.531 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 14077253c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.753 . Memory (MB): peak = 1807.531 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 14077253c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2141.605 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 14077253c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2141.605 ; gain = 0.000
+Phase 1 Initialization | Checksum: 14077253c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2141.605 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 14077253c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.330 . Memory (MB): peak = 2141.605 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 14077253c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.382 . Memory (MB): peak = 2141.605 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 14077253c
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.384 . Memory (MB): peak = 2141.605 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 2 inverters resulting in an inversion of 82 pins
+INFO: [Opt 31-138] Pushed 31 inverter(s) to 160 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 123bda9c1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.679 . Memory (MB): peak = 2141.605 ; gain = 0.000
+Retarget | Checksum: 123bda9c1
+INFO: [Opt 31-389] Phase Retarget created 68 cells and removed 148 cells
+INFO: [Opt 31-1021] In phase Retarget, 82 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1bbc70461
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.807 . Memory (MB): peak = 2141.605 ; gain = 0.000
+Constant propagation | Checksum: 1bbc70461
+INFO: [Opt 31-389] Phase Constant propagation created 47 cells and removed 381 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 82 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 1b7d23060
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2141.605 ; gain = 0.000
+Sweep | Checksum: 1b7d23060
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 746 cells
+INFO: [Opt 31-1021] In phase Sweep, 102 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 1b7d23060
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2141.605 ; gain = 0.000
+BUFG optimization | Checksum: 1b7d23060
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/gen_wroute_fifo.wroute_fifo/gen_srls[0].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/gen_wroute_fifo.wroute_fifo/gen_srls[1].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/gen_wroute_fifo.wroute_fifo/gen_srls[2].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][14]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][15]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][16]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][17]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][18]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][19]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][1]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][20]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][21]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][22]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][23]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][24]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][25]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][26]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][27]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][28]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][29]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][2]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][30]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][31]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][32]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][33]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][3]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][4]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][5]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][6]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][7]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][8]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][9]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][0]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][10]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][11]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][12]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][1]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][2]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][3]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][4]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][5]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][6]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][7]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][8]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][9]_srl32 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][0]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][10]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][11]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][12]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][13]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][14]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][15]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][16]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][17]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][18]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][19]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][1]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][2]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][3]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][8]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][9]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bresp_fifo_0/memory_reg[3][0]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bresp_fifo_0/memory_reg[3][1]_srl4 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[10].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[11].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[12].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[13].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[14].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[15].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[1].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[2].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[3].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[4].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[5].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[6].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[7].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[8].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[9].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m00_exit_pipeline/m00_exit/inst/exit_inst/gen_w_cmd_fifo.w_cmd_fifo/gen_srls[1].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[10].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[11].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[12].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[13].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[14].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[15].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[1].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[2].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[3].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[4].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[5].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[6].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[7].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[8].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_r_cmd_fifo.r_cmd_fifo/gen_srls[9].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+WARNING: [Opt 31-1131] Can not pull register out from conv_system_i/axi_smc/inst/m01_exit_pipeline/m01_exit/inst/exit_inst/gen_w_cmd_fifo.w_cmd_fifo/gen_srls[1].srl_nx1/shift_reg_reg[0]_srl16 due to none static srl address bits
+INFO: [Common 17-14] Message 'Opt 31-1131' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1b7d23060
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2141.605 ; gain = 0.000
+Shift Register Optimization | Checksum: 1b7d23060
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1b853c087
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2141.605 ; gain = 0.000
+Post Processing Netlist | Checksum: 1b853c087
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 82 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 133f3779b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2141.605 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2141.605 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 133f3779b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2141.605 ; gain = 0.000
+Phase 9 Finalization | Checksum: 133f3779b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2141.605 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              68  |             148  |                                             82  |
+|  Constant propagation         |              47  |             381  |                                             82  |
+|  Sweep                        |               0  |             746  |                                            102  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             82  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 133f3779b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2141.605 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2141.605 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 32 BRAM(s) out of a total of 128 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 24 WE to EN ports
+Number of BRAM Ports augmented: 160 newly gated: 24 Total Ports: 256
+Number of Flops added for Enable Generation: 7
+
+Ending PowerOpt Patch Enables Task | Checksum: 852566ca
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.502 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 852566ca
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 2402.363 ; gain = 260.758
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 60642c77
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 60642c77
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 60642c77
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+56 Infos, 202 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 2402.363 ; gain = 594.832
+INFO: [runtcl-4] Executing : report_drc -file conv_system_wrapper_drc_opted.rpt -pb conv_system_wrapper_drc_opted.pb -rpx conv_system_wrapper_drc_opted.rpx
+Command: report_drc -file conv_system_wrapper_drc_opted.rpt -pb conv_system_wrapper_drc_opted.pb -rpx conv_system_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.runs/impl_1/conv_system_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.runs/impl_1/conv_system_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 4822715d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 55e12ae3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 95829127
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 95829127
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 95829127
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: bd6a77d0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 436f159b
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 103ed6e5e
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 185baf76c
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 544 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 222 nets or LUTs. Breaked 0 LUT, combined 222 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            222  |                   222  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            222  |                   222  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1508a880a
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 205b3d0cd
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 205b3d0cd
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1b55cd76b
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:17 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 161bbf9e7
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:18 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1d78be13f
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1b271b0e9
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1e190a6cd
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 17c4bd5c8
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:24 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 15e00fd16
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1f187fe6f
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:25 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 15066bb48
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:28 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 15066bb48
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:28 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1c7df2c4d
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.907 | TNS=-18.438 |
+Phase 1 Physical Synthesis Initialization | Checksum: 173e71b59
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.681 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 173e71b59
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.855 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1c7df2c4d
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:32 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-2.521. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1fcb16bb5
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:38 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:38 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1fcb16bb5
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:38 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1fcb16bb5
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:38 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1fcb16bb5
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:38 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 1fcb16bb5
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:38 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:38 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1e5012bd4
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:38 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Ending Placer Task | Checksum: f57f67ef
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:38 . Memory (MB): peak = 2402.363 ; gain = 0.000
+99 Infos, 202 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:39 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_io -file conv_system_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file conv_system_wrapper_utilization_placed.rpt -pb conv_system_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file conv_system_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.787 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.867 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.runs/impl_1/conv_system_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 4.00s |  WALL: 2.43s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.507 | TNS=-15.324 |
+Phase 1 Physical Synthesis Initialization | Checksum: 152c97549
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.507 | TNS=-15.324 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 152c97549
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.507 | TNS=-15.324 |
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___143_carry__2_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___104_carry__2_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___91_carry__0_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___91_carry__0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___91_carry__0_i_2_n_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___79_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 9 pins.
+INFO: [Physopt 32-735] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___79_carry_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.474 | TNS=-15.291 |
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___143_carry__2_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___104_carry__2_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___91_carry_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___91_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___79_carry_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___79_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___70_carry_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___70_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___32_carry__1_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___32_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___32_carry__0_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i__carry__0_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i__carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry_i_3__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/C[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 10 pins.
+INFO: [Physopt 32-735] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.424 | TNS=-15.006 |
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___32_carry__1_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i__carry__1_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i__carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry__0_i_4__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/C[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 10 pins.
+INFO: [Physopt 32-735] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.320 | TNS=-13.801 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 10 pins.
+INFO: [Physopt 32-735] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.312 | TNS=-13.761 |
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 8 pins.
+INFO: [Physopt 32-735] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2[15]_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.159 | TNS=-13.667 |
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___143_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___104_carry__2_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___104_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___91_carry_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___91_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2[14]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg_n_0_[0][1].  Re-placed instance conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg[0][1]
+INFO: [Physopt 32-735] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg_n_0_[0][1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.157 | TNS=-13.657 |
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg_n_0_[8][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___104_carry__2_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___91_carry_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___91_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___79_carry_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___79_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___70_carry_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___70_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___32_carry__1_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___32_carry__0_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i__carry__0_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry_i_3__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/C[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2[14]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg_n_0_[8][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.157 | TNS=-13.657 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Phase 3 Critical Path Optimization | Checksum: 152c97549
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2402.363 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.157 | TNS=-13.657 |
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___143_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___104_carry__2_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___104_carry__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___91_carry_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___91_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___79_carry_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___79_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___70_carry_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___70_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___32_carry__1_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___32_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___32_carry__0_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i__carry__0_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i__carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry_i_3__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/C[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2[14]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg_n_0_[8][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___104_carry__2_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___91_carry_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___91_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___79_carry_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___79_carry_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___70_carry_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___70_carry_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i___32_carry__1_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i___32_carry__0_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc20_inferred__0/i__carry__0_n_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry_i_3__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/C[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/i__carry_i_14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2[14]_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg_n_0_[8][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-2.157 | TNS=-13.657 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Phase 4 Critical Path Optimization | Checksum: 152c97549
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-2.157 | TNS=-13.657 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.350  |          1.667  |            0  |              0  |                     6  |           0  |           2  |  00:00:01  |
+|  Total          |          0.350  |          1.667  |            0  |              0  |                     6  |           0  |           3  |  00:00:01  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1be830c2a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+234 Infos, 202 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.791 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2402.363 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.867 . Memory (MB): peak = 2402.363 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.runs/impl_1/conv_system_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: fcff9c76 ConstDB: 0 ShapeSum: a941b49a RouteDB: 0
+Post Restoration Checksum: NetGraph: 429671f1 | NumContArr: 9188cecd | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2597135f8
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 2422.492 ; gain = 20.129
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2597135f8
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 2422.492 ; gain = 20.129
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2597135f8
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 2422.496 ; gain = 20.133
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 2db6c3dd6
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:24 . Memory (MB): peak = 2484.051 ; gain = 81.688
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.198 | TNS=-14.095| WHS=-0.287 | THS=-381.648|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 11347
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 11347
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 2f2915000
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:26 . Memory (MB): peak = 2531.445 ; gain = 129.082
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 2f2915000
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:26 . Memory (MB): peak = 2531.445 ; gain = 129.082
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 35b7f8f30
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:27 . Memory (MB): peak = 2553.332 ; gain = 150.969
+Phase 3 Initial Routing | Checksum: 35b7f8f30
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:27 . Memory (MB): peak = 2553.332 ; gain = 150.969
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 811
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.355 | TNS=-21.404| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 2486d99bb
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:34 . Memory (MB): peak = 2553.332 ; gain = 150.969
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.311 | TNS=-20.016| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 292dc92e1
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:36 . Memory (MB): peak = 2553.332 ; gain = 150.969
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.311 | TNS=-19.151| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 234ecdea6
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:36 . Memory (MB): peak = 2553.332 ; gain = 150.969
+Phase 4 Rip-up And Reroute | Checksum: 234ecdea6
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:36 . Memory (MB): peak = 2553.332 ; gain = 150.969
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 281237ac2
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:37 . Memory (MB): peak = 2553.332 ; gain = 150.969
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.196 | TNS=-17.987| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1e286450b
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:40 . Memory (MB): peak = 2573.285 ; gain = 170.922
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1e286450b
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:40 . Memory (MB): peak = 2573.285 ; gain = 170.922
+Phase 5 Delay and Skew Optimization | Checksum: 1e286450b
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:40 . Memory (MB): peak = 2573.285 ; gain = 170.922
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 25cdb6944
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:41 . Memory (MB): peak = 2573.285 ; gain = 170.922
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.196 | TNS=-13.340| WHS=0.034  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 2231d2821
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:41 . Memory (MB): peak = 2573.285 ; gain = 170.922
+Phase 6 Post Hold Fix | Checksum: 2231d2821
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:41 . Memory (MB): peak = 2573.285 ; gain = 170.922
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 3.24956 %
+  Global Horizontal Routing Utilization  = 3.58316 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 54.955%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 51.3514%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 54.4118%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 55.8824%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 2231d2821
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:41 . Memory (MB): peak = 2573.285 ; gain = 170.922
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 2231d2821
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:41 . Memory (MB): peak = 2573.285 ; gain = 170.922
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1c25e3a08
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:42 . Memory (MB): peak = 2573.285 ; gain = 170.922
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-2.196 | TNS=-13.340| WHS=0.034  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1c25e3a08
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:43 . Memory (MB): peak = 2573.285 ; gain = 170.922
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 11 Post-Route Event Processing
+Phase 11 Post-Route Event Processing | Checksum: 1e6c223c0
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:44 . Memory (MB): peak = 2573.285 ; gain = 170.922
+Ending Routing Task | Checksum: 1e6c223c0
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:44 . Memory (MB): peak = 2573.285 ; gain = 170.922
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+250 Infos, 203 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:14 ; elapsed = 00:00:45 . Memory (MB): peak = 2573.285 ; gain = 170.922
+INFO: [runtcl-4] Executing : report_drc -file conv_system_wrapper_drc_routed.rpt -pb conv_system_wrapper_drc_routed.pb -rpx conv_system_wrapper_drc_routed.rpx
+Command: report_drc -file conv_system_wrapper_drc_routed.rpt -pb conv_system_wrapper_drc_routed.pb -rpx conv_system_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.runs/impl_1/conv_system_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file conv_system_wrapper_methodology_drc_routed.rpt -pb conv_system_wrapper_methodology_drc_routed.pb -rpx conv_system_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file conv_system_wrapper_methodology_drc_routed.rpt -pb conv_system_wrapper_methodology_drc_routed.pb -rpx conv_system_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.runs/impl_1/conv_system_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2573.285 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file conv_system_wrapper_power_routed.rpt -pb conv_system_wrapper_power_summary_routed.pb -rpx conv_system_wrapper_power_routed.rpx
+Command: report_power -file conv_system_wrapper_power_routed.rpt -pb conv_system_wrapper_power_summary_routed.pb -rpx conv_system_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+260 Infos, 203 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file conv_system_wrapper_route_status.rpt -pb conv_system_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file conv_system_wrapper_timing_summary_routed.rpt -pb conv_system_wrapper_timing_summary_routed.pb -rpx conv_system_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file conv_system_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file conv_system_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file conv_system_wrapper_bus_skew_routed.rpt -pb conv_system_wrapper_bus_skew_routed.pb -rpx conv_system_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2576.879 ; gain = 3.594
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.789 . Memory (MB): peak = 2587.539 ; gain = 14.254
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2587.539 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.160 . Memory (MB): peak = 2587.539 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2587.539 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2587.539 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.985 . Memory (MB): peak = 2587.539 ; gain = 14.254
+INFO: [Common 17-1381] The checkpoint 'C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.runs/impl_1/conv_system_wrapper_routed.dcp' has been generated.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m02_nodes/m02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m02_nodes/m02_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m02_nodes/m02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m02_nodes/m02_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m02_nodes/m02_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m02_nodes/m02_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m02_nodes/m02_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m02_nodes/m02_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m02_nodes/m02_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m02_nodes/m02_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m01_nodes/m01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m01_nodes/m01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m01_nodes/m01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m01_nodes/m01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m01_nodes/m01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m01_nodes/m01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m01_nodes/m01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block conv_system_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the conv_system_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+Command: write_bitstream -force conv_system_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[0] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[0]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[10] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[10]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[11] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[11]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[12] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[12]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[13] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[13]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[14] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[14]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[16]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[15] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[15]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[1] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[1]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[2] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[2]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[3] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[3]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[4] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[4]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[5] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[5]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[6] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[6]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[7] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[7]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[8] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[8]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ADDRBWRADDR[9] (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addrb[9]) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ENBWREN (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B_ENBWREN_cooolgate_en_sig_160) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/bram0_addr_reg[17]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ENBWREN (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B_ENBWREN_cooolgate_en_sig_160) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ENBWREN (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B_ENBWREN_cooolgate_en_sig_160) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B has an input control pin conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B/ENBWREN (net: conv_system_i/axi_bram_ctrl_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.CASCADED_PRIM36.ram_B_ENBWREN_cooolgate_en_sig_160) which is driven by a register (conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/state_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 2 net(s) have no routable loads. The problem bus(es) and/or net(s) are conv_system_i/axi_cdma_0/U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/n_0_0, and conv_system_i/axi_cdma_0/U0/GEN_SIMPLE_MODE.I_SIMPLE_MODE_WRAP/GEN_DM_FULL.I_DATAMOVER_FULL/n_0_1.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 22 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./conv_system_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:26 ; elapsed = 00:00:17 . Memory (MB): peak = 3042.109 ; gain = 454.570
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 27 20:53:33 2025...

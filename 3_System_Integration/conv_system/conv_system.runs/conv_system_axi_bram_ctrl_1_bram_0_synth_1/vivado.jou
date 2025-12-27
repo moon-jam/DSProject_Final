@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Dec 27 20:46:48 2025
+# Process ID: 9704
+# Current directory: C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.runs/conv_system_axi_bram_ctrl_1_bram_0_synth_1
+# Command line: vivado.exe -log conv_system_axi_bram_ctrl_1_bram_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source conv_system_axi_bram_ctrl_1_bram_0.tcl
+# Log file: C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.runs/conv_system_axi_bram_ctrl_1_bram_0_synth_1/conv_system_axi_bram_ctrl_1_bram_0.vds
+# Journal file: C:/Users/User/school/digi_sys_exp/DSProject_Final/3_System_Integration/conv_system/conv_system.runs/conv_system_axi_bram_ctrl_1_bram_0_synth_1\vivado.jou
+# Running On: Panda-Windows11, OS: Windows, CPU Frequency: 3693 MHz, CPU Physical cores: 12, Host memory: 34258 MB
+#-----------------------------------------------------------
+source conv_system_axi_bram_ctrl_1_bram_0.tcl -notrace

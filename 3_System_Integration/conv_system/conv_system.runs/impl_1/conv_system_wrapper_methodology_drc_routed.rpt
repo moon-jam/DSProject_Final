@@ -1,0 +1,70 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Sat Dec 27 20:53:08 2025
+| Host         : Panda-Windows11 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file conv_system_wrapper_methodology_drc_routed.rpt -pb conv_system_wrapper_methodology_drc_routed.pb -rpx conv_system_wrapper_methodology_drc_routed.rpx
+| Design       : conv_system_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 7
++-----------+----------+-----------------------+------------+
+| Rule      | Severity | Description           | Violations |
++-----------+----------+-----------------------+------------+
+| TIMING-16 | Warning  | Large setup violation | 7          |
++-----------+----------+-----------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.012 ns between conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg[8][8]/C (clocked by clk_fpga_0) and conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc1_reg[13]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.492 ns between conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg[8][8]/C (clocked by clk_fpga_0) and conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc1_reg[14]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.639 ns between conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg[8][0]/C (clocked by clk_fpga_0) and conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2_reg[12]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.729 ns between conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg[8][8]/C (clocked by clk_fpga_0) and conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc1_reg[15]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.757 ns between conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg[8][0]/C (clocked by clk_fpga_0) and conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2_reg[13]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -2.067 ns between conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg[8][0]/C (clocked by clk_fpga_0) and conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2_reg[14]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -2.195 ns between conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/mul2_reg[8][0]/C (clocked by clk_fpga_0) and conv_system_i/conv_v1_0_0/inst/conv_v1_0_S00_AXI_inst/u_conv/acc2_reg[15]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+
