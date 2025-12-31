@@ -1,7 +1,7 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Wed Dec 17 12:48:34 2025
-| Host         : lani-desktop
+| Date         : Wed Dec 31 11:35:11 2025
+| Host         : Panda-Windows11
 | Design       : design_1
 | Device       : xc7z020-clg400-1--
 -------------------------------------

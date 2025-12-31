@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Wed Dec 17 12:48:37 2025
-| Host         : lani-desktop running 64-bit major release  (build 9200)
+| Date         : Wed Dec 31 11:35:12 2025
+| Host         : Panda-Windows11 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file conv_control_sets_placed.rpt
 | Design       : conv
 | Device       : xc7z020
@@ -43,11 +43,11 @@ Table of Contents
 | >= 0 to < 4        |     0 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |    11 |
+| >= 8 to < 10       |    10 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
-| >= 14 to < 16      |     1 |
-| >= 16              |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              83 |           23 |
-| No           | No                    | Yes                    |              51 |           15 |
+| No           | No                    | No                     |              83 |           26 |
+| No           | No                    | Yes                    |              51 |           16 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |             102 |           33 |
+| Yes          | No                    | Yes                    |             134 |           57 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,23 +70,23 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+-----------------------+------------------+------------------+----------------+--------------+
-|  Clock Signal  |     Enable Signal     | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+-----------------------+------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG | bram0_addr[7]_i_1_n_0 | x[7]_i_3_n_0     |                2 |              8 |         4.00 |
-|  clk_IBUF_BUFG | buffer[4][7]_i_1_n_0  | x[7]_i_3_n_0     |                2 |              8 |         4.00 |
-|  clk_IBUF_BUFG | buffer[0][7]_i_1_n_0  | x[7]_i_3_n_0     |                3 |              8 |         2.67 |
-|  clk_IBUF_BUFG | buffer[3][7]_i_1_n_0  | x[7]_i_3_n_0     |                2 |              8 |         4.00 |
-|  clk_IBUF_BUFG | buffer[1][7]_i_1_n_0  | x[7]_i_3_n_0     |                2 |              8 |         4.00 |
-|  clk_IBUF_BUFG | buffer[2][7]_i_1_n_0  | x[7]_i_3_n_0     |                1 |              8 |         8.00 |
-|  clk_IBUF_BUFG | buffer[5][7]_i_1_n_0  | x[7]_i_3_n_0     |                3 |              8 |         2.67 |
-|  clk_IBUF_BUFG | buffer[7][7]_i_1_n_0  | x[7]_i_3_n_0     |                3 |              8 |         2.67 |
-|  clk_IBUF_BUFG | buffer[8][7]_i_1_n_0  | x[7]_i_3_n_0     |                1 |              8 |         8.00 |
-|  clk_IBUF_BUFG | buffer[6][7]_i_1_n_0  | x[7]_i_3_n_0     |                3 |              8 |         2.67 |
-|  clk_IBUF_BUFG | y[7]_i_1_n_0          | x[7]_i_3_n_0     |                3 |              8 |         2.67 |
-|  clk_IBUF_BUFG | x[7]_i_1_n_0          | x[7]_i_3_n_0     |                8 |             14 |         1.75 |
-|  clk_IBUF_BUFG |                       | x[7]_i_3_n_0     |               15 |             51 |         3.40 |
-|  clk_IBUF_BUFG |                       |                  |               23 |             83 |         3.61 |
-+----------------+-----------------------+------------------+------------------+----------------+--------------+
++----------------+------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |      Enable Signal     | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | y[7]_i_1_n_0           | x[7]_i_3_n_0     |                6 |              8 |         1.33 |
+|  clk_IBUF_BUFG | buffer[4][7]_i_1_n_0   | x[7]_i_3_n_0     |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | buffer[2][7]_i_1_n_0   | x[7]_i_3_n_0     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | buffer[0][7]_i_1_n_0   | x[7]_i_3_n_0     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | buffer[3][7]_i_1_n_0   | x[7]_i_3_n_0     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | buffer[1][7]_i_1_n_0   | x[7]_i_3_n_0     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | buffer[5][7]_i_1_n_0   | x[7]_i_3_n_0     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | buffer[6][7]_i_1_n_0   | x[7]_i_3_n_0     |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | buffer[8][7]_i_1_n_0   | x[7]_i_3_n_0     |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | buffer[7][7]_i_1_n_0   | x[7]_i_3_n_0     |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | x[7]_i_1_n_0           | x[7]_i_3_n_0     |                7 |             24 |         3.43 |
+|  clk_IBUF_BUFG | bram0_addr[31]_i_1_n_0 | x[7]_i_3_n_0     |               23 |             30 |         1.30 |
+|  clk_IBUF_BUFG |                        | x[7]_i_3_n_0     |               16 |             51 |         3.19 |
+|  clk_IBUF_BUFG |                        |                  |               26 |             83 |         3.19 |
++----------------+------------------------+------------------+------------------+----------------+--------------+
 
 

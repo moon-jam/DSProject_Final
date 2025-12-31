@@ -1,2 +1,6 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/DSProject_Final/1_Convolution_IP_Core_Design/src/conv.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/school/digi_sys_exp/DSProject_Final/1_Convolution_IP_Core_Design/src/conv.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module conv
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/User/school/digi_sys_exp/DSProject_Final/1_Convolution_IP_Core_Design/tests/testfixture.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfixture
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/User/school/digi_sys_exp/DSProject_Final/1_Convolution_IP_Core_Design/functional_sim/functional_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

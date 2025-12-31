@@ -104,17 +104,10 @@ always @(*) begin
             next_state = start ? READ_9_PIXELS : IDLE;
 
         READ_9_PIXELS:
-<<<<<<< HEAD
-            next_state = READ_3_PIXELS;
-
-        READ_3_PIXELS:
-            next_state = MULPTIPLY;
-=======
             next_state = (counter == 4'd10) ? MULTIPLY : READ_9_PIXELS;
 
         READ_3_PIXELS:
             next_state = (counter == 4'd4) ? MULTIPLY : READ_3_PIXELS;
->>>>>>> a173b78eca465643ed6e282bcb93379d45c797bc
 
         MULTIPLY:
             next_state = ACCUMULATE;
